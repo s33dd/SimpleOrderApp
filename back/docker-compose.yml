@@ -1,0 +1,8 @@
+services:
+  db: 
+    build: ./
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_HOST=localhost
+    ports:
+      - 3306:3306
